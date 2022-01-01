@@ -1,11 +1,11 @@
 {
-  "main.js": "/jukebox/static/js/main.bd887303.chunk.js",
-  "main.js.map": "/jukebox/static/js/main.bd887303.chunk.js.map",
+  "main.js": "/jukebox/static/js/main.440c44d2.chunk.js",
+  "main.js.map": "/jukebox/static/js/main.440c44d2.chunk.js.map",
   "static/js/1.ece1ad75.chunk.js": "/jukebox/static/js/1.ece1ad75.chunk.js",
   "static/js/1.ece1ad75.chunk.js.map": "/jukebox/static/js/1.ece1ad75.chunk.js.map",
   "runtime~main.js": "/jukebox/static/js/runtime~main.385c445b.js",
   "runtime~main.js.map": "/jukebox/static/js/runtime~main.385c445b.js.map",
   "index.html": "/jukebox/index.html",
-  "precache-manifest.0382638aaa4073ffa15f161b8af7a1f3.js": "/jukebox/precache-manifest.0382638aaa4073ffa15f161b8af7a1f3.js",
+  "precache-manifest.675320dfbda6bb9786f9805fa4807b5b.js": "/jukebox/precache-manifest.675320dfbda6bb9786f9805fa4807b5b.js",
   "service-worker.js": "/jukebox/service-worker.js"
 }
