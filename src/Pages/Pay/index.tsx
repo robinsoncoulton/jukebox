@@ -12,17 +12,28 @@ interface PayProps {
 
 const Pay: React.FC<PayProps> = ({ setPage, pendingTransaction , setPendingTransaction}) => {
     const handlePlay = async () => {
-        if (!pendingTransaction) { throw new Error('pending transaction required')}
-        await ApiClient.playTrack(pendingTransaction.playlistUri, pendingTransaction.offset)
-        setPendingTransaction(undefined);
-        setPage(Pages.SUCCESS);
+        try {
+            if (!pendingTransaction) { throw new Error('pending transaction required')}
+            await ApiClient.playTrack(pendingTransaction.playlistUri, pendingTransaction.offset)
+            setPendingTransaction(undefined);
+            setPage(Pages.SUCCESS);
+        } catch (e) {
+            setPage(Pages.ERROR);
+        }
+
     }
 
     const handleQueue = async () => {
-        if (!pendingTransaction) { throw new Error('pending transaction required')}
-        await ApiClient.queueTrack(pendingTransaction.trackUri)
-        setPendingTransaction(undefined);
-        setPage(Pages.SUCCESS);
+        try {
+            if (!pendingTransaction) {
+                throw new Error('pending transaction required')
+            }
+            await ApiClient.queueTrack(pendingTransaction.trackUri)
+            setPendingTransaction(undefined);
+            setPage(Pages.SUCCESS);
+        } catch (e) {
+            setPage(Pages.ERROR);
+        }
     }
 
     return(<>

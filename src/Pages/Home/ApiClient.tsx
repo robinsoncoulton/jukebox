@@ -6,7 +6,8 @@ const getToken = async () => {
     if (!token) {
         console.log('getting token from server');
         await axios({
-            url: `http://localhost:8888/token`,
+            // url: `http://localhost:8888/token`,
+            url: `https://protected-tundra-64098.herokuapp.com/token`,
             method: 'GET',
         }).then((res) => {
             token = res.data.token
