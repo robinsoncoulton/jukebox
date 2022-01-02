@@ -50,7 +50,7 @@ const ApiClient = {
             url: `https://api.spotify.com/v1/me/player/queue?uri=${trackUri}`,
             method: 'POST',
             headers: {
-                Authorization: `Bearer BQDUkYHmcZRiwBuIHECErppmelT0iGQMAQhTsuofd8W_Gom6o_0735OB-NZo2vzOd2h317b-qdqvPfdX2yDEZPjhEV8RGT5SA77YxKA0GbIbjDk7F3IwlUUgnHWSFVSFtMvGgs2ZoNWD9OzhUBWSFj2vlKI9MYZoOLcbZPjScp7NuJOLbMZgeZUg8uosKkFB-dz8qQ`,
+                Authorization: `Bearer ${await getToken()}`,
             },
         })
     }
